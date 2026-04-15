@@ -141,9 +141,6 @@ class Login extends CI_Controller {
     $username = htmlspecialchars($this->input->post('username', true), ENT_QUOTES);
     $password = htmlspecialchars($this->input->post('password', true), ENT_QUOTES);
 
-    var_dump($username);
-    var_dump($password);
-
     $cek_login = $this->M_login->admin_login($username, $password);
 
     // var_dump($cek_login);
