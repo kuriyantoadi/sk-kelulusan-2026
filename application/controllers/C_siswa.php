@@ -32,9 +32,9 @@ class C_siswa extends CI_Controller {
     $data['tampil'] = $this->M_admin->siswa_detail_tekno($ses_id);
     $data['profil_sekolah'] = $this->M_admin->profil_sekolah();
 
-    $this->load->view('template/header-siswa.php', $ses_id);
+    $this->load->view('template/header-siswa', $data);
     $this->load->view('siswa_tekno/dashboard', $data);
-    $this->load->view('template/footer-siswa.php');
+    $this->load->view('template/footer-siswa');
   }
 
   public function password_tekno()
@@ -43,9 +43,9 @@ class C_siswa extends CI_Controller {
     $data['tampil'] = $this->M_admin->siswa_detail_tekno($ses_id);
     $data['profil_sekolah'] = $this->M_admin->profil_sekolah();
 
-    $this->load->view('template/header-siswa.php', $ses_id);
+    $this->load->view('template/header-siswa', $data);
     $this->load->view('siswa_tekno/password', $data);
-    $this->load->view('template/footer-siswa.php');
+    $this->load->view('template/footer-siswa');
   }
 
   public function siswa_pass_up_tekno()
@@ -110,9 +110,9 @@ class C_siswa extends CI_Controller {
       $data['tampil'] = $this->M_admin->siswa_detail_bismen($ses_id);
       $data['profil_sekolah'] = $this->M_admin->profil_sekolah();
 
-      $this->load->view('template/header-siswa.php', $ses_id);
+      $this->load->view('template/header-siswa', $data);
       $this->load->view('siswa_bismen/dashboard', $data);
-      $this->load->view('template/footer-siswa.php');
+      $this->load->view('template/footer-siswa', $data);
 
     }
 
@@ -152,7 +152,7 @@ class C_siswa extends CI_Controller {
       $data['tampil'] = $this->M_admin->siswa_detail_bismen($ses_id);
       $data['profil_sekolah'] = $this->M_admin->profil_sekolah();
 
-      $this->load->view('template/header-siswa.php', $ses_id);
+      $this->load->view('template/header-siswa.php', $data);
       $this->load->view('siswa_bismen/password', $data);
       $this->load->view('template/footer-siswa.php');
     }

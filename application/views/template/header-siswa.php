@@ -26,11 +26,10 @@
 	<link rel="stylesheet" href="<?= base_url() ?>assets/css/dark-theme.css"/>
 	<link rel="stylesheet" href="<?= base_url() ?>assets/css/semi-dark.css"/>
 	<link rel="stylesheet" href="<?= base_url() ?>assets/css/header-colors.css"/>
-	<title>SKL 2024</title>
+	<title>SKL <?= $profil_sekolah->tahun_ajaran_akhir ?></title>
 </head>
 
 <body>
-
 
 	<!--wrapper-->
 	<div class="wrapper">
@@ -38,7 +37,7 @@
 		<div class="sidebar-wrapper" data-simplebar="true">
 			<div class="sidebar-header">
 				<div>
-					<h4 class="logo-text">SKL 2024</h4>
+					<h4 class="logo-text">SKL <?= $profil_sekolah->tahun_ajaran_akhir ?></h4>
 				</div>
 				<div class="toggle-icon ms-auto"><i class='bx bx-arrow-to-left'></i>
 				</div>

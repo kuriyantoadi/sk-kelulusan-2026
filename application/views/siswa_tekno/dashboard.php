@@ -61,10 +61,10 @@
             </table>
 
             <?php 
-            // if ($row->status_kelulusan == "LULUS") { 
+             if ($row->status_kelulusan == "LULUS") { 
             ?>
 
-              <h5>Nilai Siswa</h5>
+              <!-- <h5>Nilai Siswa</h5>
 
               <table style="margin-bottom: 100px" class="table table-bordered table-hover">
                 <tr>
@@ -162,8 +162,10 @@
                   <?= number_format($row->nilai_rata, 2) ?>
                   </td>
                 </tr>
-              </table>
-              <!-- <?php } ?> -->
+              </table> -->
+              <?php }else{
+                "";
+              } ?> 
 
             <?php } ?>
         </div>
