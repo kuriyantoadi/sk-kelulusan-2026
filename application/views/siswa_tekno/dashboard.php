@@ -13,7 +13,7 @@
 
               <a type="button" class="btn btn-secondary btn-sm mb-3" href="<?= site_url('C_siswa/password_tekno/'.$row->id_siswa); ?>">Password<i class='bx bx-key m-0'></i></a>
               <?php if ($row->status_kelulusan == "LULUS") { ?>
-                <a type="button" class="btn btn-success btn-sm mb-3" href="<?= site_url('C_siswa/cetak_tekno/'.$row->id_siswa); ?>" >Surat Kelulusan PDF<i class='bx bx-cloud-download m-0'></i></a>
+                <!-- <a type="button" class="btn btn-success btn-sm mb-3" href="<?= site_url('C_siswa/cetak_tekno/'.$row->id_siswa); ?>" >Surat Kelulusan PDF<i class='bx bx-cloud-download m-0'></i></a> -->
               <?php }else { ?>
                 <p>Mohon untuk menghubungi Ketua Prodi, untuk info lebih lanjut tentang kelulusan.</p>
               <?php } ?>
@@ -60,7 +60,9 @@
             </tbody>
             </table>
 
-            <?php if ($row->status_kelulusan == "LULUS") { ?>
+            <?php 
+            // if ($row->status_kelulusan == "LULUS") { 
+            ?>
 
               <h5>Nilai Siswa</h5>
 
@@ -161,7 +163,7 @@
                   </td>
                 </tr>
               </table>
-              <?php } ?>
+              <!-- <?php } ?> -->
 
             <?php } ?>
         </div>
