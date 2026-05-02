@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>SKL 2024</title>
+  <title>SKL 2026</title>
 
 
   <style>
