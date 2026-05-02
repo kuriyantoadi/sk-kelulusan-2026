@@ -209,7 +209,8 @@ class C_admin extends CI_Controller
 		$fisika = $this->input->post('fisika');
 		$kompetensi_keahlian = $this->input->post('kompetensi_keahlian');
 		$dasar_program_keahlian = $this->input->post('dasar_program_keahlian');
-		$kode_siswa = array('id_siswa' => $id_siswa);
+		$id_kelas = $this->input->post('id_kelas');
+		$kode_siswa = array('id_siswa' => $id_siswa); 
 
 		$data_edit = array(
 			'nama_siswa' => $nama_siswa,
@@ -233,6 +234,7 @@ class C_admin extends CI_Controller
 			'fisika' => $fisika,
 			'kompetensi_keahlian' => $kompetensi_keahlian,
 			'dasar_program_keahlian' => $dasar_program_keahlian,
+			'id_kelas' => $id_kelas
 		);
 
 		$this->M_admin->siswa_edit_up_tekno($data_edit, $kode_siswa);
@@ -479,6 +481,7 @@ class C_admin extends CI_Controller
 		$administrasi_umum = $this->input->post('administrasi_umum');
 		$dasar_program_keahlian = $this->input->post('dasar_program_keahlian');
 		$kompetensi_keahlian = $this->input->post('kompetensi_keahlian');
+		$id_kelas = $this->input->post('id_kelas');
 
 		$kode_siswa = array('id_siswa' => $id_siswa);
 
@@ -490,6 +493,7 @@ class C_admin extends CI_Controller
 			'tgl_lahir' => $tgl_lahir,
 			'nama_org_tua' => $nama_org_tua,
 			'status_kelulusan' => $status_kelulusan,
+			'id_kelas' => $id_kelas,
 			'pai' => $pai,
 			'pkn' => $pkn,
 			'b_ind' => $b_ind,
