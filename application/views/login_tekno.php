@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>SKL 2024</title>
+  <title>SKL 2026</title>
 
 
   <style>
@@ -39,7 +39,7 @@
       <div class="fadeIn first">
         <img src="<?= base_url() ?>assets/img/logo-smk.png" style="margin-top: 20px; margin-bottom: 10px" height="130px" alt="logo SMK Negeri 1 Kragilan">
         <h5 style=""><?= $profil_sekolah->nama_sekolah ?></h5>
-        <h5 style="margin-bottom: 5px;">Surat Kelulusan Tahun 2024</h5>
+        <h5 style="margin-bottom: 5px;">Surat Kelulusan Tahun 2026</h5>
         <p  style="margin-bottom: 20px;"><b><span class="kedip">Login TPM, TKR, TKJ dan RPL</span></b></p>
         <?= $this->session->flashdata('msg') ?>
 

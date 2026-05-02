@@ -11,13 +11,11 @@
               <?= $this->session->flashdata('msg') ?>
               <?php foreach ($tampil as $row) { ?>
 
-              <a type="button" class="btn btn-secondary btn-sm mb-3" href="<?= site_url('C_siswa/password_tekno/'.$row->id_siswa); ?>">Password<i class='bx bx-key m-0'></i></a>
+              <!-- <a type="button" class="btn btn-secondary btn-sm mb-3" href="<?= site_url('C_siswa/password_tekno/'.$row->id_siswa); ?>">Password<i class='bx bx-key m-0'></i></a> -->
               <?php if ($row->status_kelulusan == "LULUS") { ?>
-                <!-- <a type="button" class="btn btn-success btn-sm mb-3" href="<?= site_url('C_siswa/cetak_tekno/'.$row->id_siswa); ?>" >Surat Kelulusan PDF<i class='bx bx-cloud-download m-0'></i></a> -->
-              <?php }else { ?>
-                <p>Mohon untuk menghubungi Ketua Prodi, untuk info lebih lanjut tentang kelulusan.</p>
-              <?php } ?>
-
+              <!-- <a type="button" class="btn btn-success btn-sm mb-3" href="<?= site_url('C_siswa/cetak_tekno/'.$row->id_siswa); ?>" >Surat Kelulusan PDF<i class='bx bx-cloud-download m-0'></i></a> -->
+              
+              <img src="<?= base_url() ?>assets/img/ceklis.jpg"  class="msg-avatar" alt="" style="display:block; margin:auto;">
 
               <table class="table table-bordered table-hover">
                 <tbody>
@@ -33,10 +31,10 @@
                 <td>Tanggal Lahir</td>
                 <td>: <?= $row->tgl_lahir ?></td>
               </tr>
-              <tr>
+              <!-- <tr>
                 <td>Nama Orang Tua / Wali</td>
                 <td>: <?= $row->nama_org_tua ?></td>
-              </tr>
+              </tr> -->
               <tr>
                 <td>Nomor Induk Siswa</td>
                 <td>: <?= $row->nis_siswa ?></td>
@@ -53,16 +51,13 @@
                 <td>Paket Keahlian</td>
                 <td>: <?= $row->paket_keahlian ?></td>
               </tr>
-              <tr>
+              <!-- <tr>
                 <td>Dinyatakan</td>
                 <td>: <?= $row->status_kelulusan ?></td>
-              </tr>
+              </tr> -->
             </tbody>
             </table>
 
-            <?php 
-             if ($row->status_kelulusan == "LULUS") { 
-            ?>
 
               <!-- <h5>Nilai Siswa</h5>
 
@@ -163,9 +158,31 @@
                   </td>
                 </tr>
               </table> -->
-              <?php }else{
-                "";
-              } ?> 
+              
+              <?php }else { ?>
+            
+                  <div class="row g-0">
+                    <div class="col col-xl-5">
+                      <div class="card-body p-4">
+                        <h1 class="display-1"><span class="text-primary">4</span><span class="text-danger">0</span><span class="text-success">4</span></h1>
+                        <h2 class="font-weight-bold display-4">Lost in Space</h2>
+                        <p>You have reached the edge of the universe.
+                          <br>The page you requested could not be found.
+                          <br>Dont'worry and return to the previous page.</p>
+                        <!-- <div class="mt-5"> <a href="javascript:;" class="btn btn-primary btn-lg px-md-5 radius-30">Go Home</a>
+                          <a href="javascript:;" class="btn btn-outline-dark btn-lg ms-3 px-md-5 radius-30">Back</a>
+                        </div> -->
+                      </div>
+                    </div>
+                    <div class="col-xl-7">
+                      <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2019/03/shutterstock_1338315902.png" class="img-fluid" alt="">
+                    </div>
+                  </div>
+                    
+              <?php } ?>
+
+
+            
 
             <?php } ?>
         </div>
