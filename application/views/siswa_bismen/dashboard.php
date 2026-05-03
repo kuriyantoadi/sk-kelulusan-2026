@@ -60,7 +60,7 @@
               </table>
 
 
-              <h5>Nilai Siswa</h5>
+              <!-- <h5>Nilai Siswa</h5>
 
               <table style="margin-bottom: 100px" class="table table-bordered table-hover">
                 <tr>
@@ -168,7 +168,7 @@
                 </tr>
 
               </table>
-              
+               -->
               <?php }else { ?>
                   <div class="row g-0">
                     <div class="col col-xl-5">

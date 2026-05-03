@@ -51,10 +51,10 @@
                 <td>Paket Keahlian</td>
                 <td>: <?= $row->paket_keahlian ?></td>
               </tr>
-              <!-- <tr>
+              <tr>
                 <td>Dinyatakan</td>
                 <td>: <?= $row->status_kelulusan ?></td>
-              </tr> -->
+              </tr>
             </tbody>
             </table>
 
